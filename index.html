@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<h1>
+
+    Do you want to hear a joke?
+
+</h1>
+
+<p>
+
+    <h2 id="joke">Joke goes here!</h2>
+    <Button id="myButton" onclick="buttonClick()">Click Me For a Joke</Button>
+
+    <script>
+        var myButton = document.getElementById("myButton");
+        var joke = document.getElementById("joke");
+
+        function buttonClick() {
+
+            var randInt = Math.floor((Math.random() * 3) + 0);
+
+
+            let jokes = [
+                "What do you call a cow with no legs? (Ground beef)",
+                "What time do you go to the dentist? (Tooth hurty)",
+                "Your mom"
+
+            ];
+
+            var joke1 = jokes[randInt];
+
+            joke.innerHTML = joke1;
+
+
+
+
+
+        }
+    </script>
+
+
+</p>
+
+<footer></footer>
